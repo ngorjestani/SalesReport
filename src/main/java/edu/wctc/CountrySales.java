@@ -1,23 +1,17 @@
 package edu.wctc;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-public class Sale {
-    private String customer;
-    private String country;
+public class CountrySales {
+    private String name;
     private float amount;
     private float tax;
     private float shipping;
 
-    public String getCountry() {
-        return country;
+    public String getName() {
+        return name;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public float getAmount() {
@@ -42,13 +36,5 @@ public class Sale {
 
     public void setShipping(float shipping) {
         this.shipping = shipping;
-    }
-
-    public String getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(String customer) {
-        this.customer = customer;
     }
 }
