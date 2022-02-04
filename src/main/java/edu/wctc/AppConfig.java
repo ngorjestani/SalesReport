@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
     @Bean
     public SalesInput salesInput() {
-        return new TextInput();
+        return new ConsoleInput();
     }
 
     @Bean
@@ -18,6 +18,6 @@ public class AppConfig {
     }
 
     @Bean SalesReport salesReport() {
-        return new SalesDetail();
+        return new SalesSummary();
     }
 }

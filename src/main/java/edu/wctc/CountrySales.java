@@ -6,6 +6,13 @@ public class CountrySales {
     private float tax;
     private float shipping;
 
+    public CountrySales(String name) {
+        this.name = name;
+        this.amount = 0;
+        this.tax = 0;
+        this.shipping = 0;
+    }
+
     public String getName() {
         return name;
     }

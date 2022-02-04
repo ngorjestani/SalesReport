@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
+
 public class SalesDetail implements SalesReport {
     @Override
     public void generateReport(List<Sale> salesList) {
